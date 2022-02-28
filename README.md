@@ -120,6 +120,6 @@ And there's still some more text after that.
         at MarkdownParseTest.testFile11(MarkdownParseTest.java:121)
 ```
 ## Answer the following questions
-1. my snippet 1 worked.
+1. my snippet 1 worked. It worked because the code on my implementation can identify the proper open and close parentheses. It will look for the next close bracket once it found a open bracket, and once it found the close bracket, it will look for an open parenthesis and ignore anything between them. 
 2. yes. i should probably inspect the rearmost close parenthesis, instead of the next parenthesis. this way i can go pass the potential parentheses inside a link.
 3. no, i can't think of a way to change my code within 10 lines to solve this problem, because the position of different parentheses includes line change, and it cannot be solved unless we discard the use of the `readString` method at `MarkdownParse.main`.
